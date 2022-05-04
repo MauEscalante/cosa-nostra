@@ -103,7 +103,7 @@ HTML, body{
     
 }
 
-.subtitulo{
+.header>.subtitulo{
     border: 0px solid;
     color:goldenrod;
     text-align: center;
