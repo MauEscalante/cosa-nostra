@@ -5,109 +5,181 @@ HTML, body{
     scroll-behavior: smooth;
 }
 
-.encabezado{
-    color: rgb(212, 0, 21);
-    text-align: center;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    margin: 5px;
+
+.logo{
+    opacity: 0.5;
+    width: 200px;
+    height: auto;
 }
 
 #bienvenidos{
     width: 100%;
     height: 100%;
     background: url("fondo.jfif") no-repeat;
-    background-size: cover;
+    background-size: cover ;
+    background-attachment: fixed;
     overflow: hidden ;
+    display: block;
 }
 
 .header{
-    background-color: rgba(0, 0, 0,0.5);
-    position: fixed;
-    width: 100%;    
-}
-
-.header>h1{
-    font-family: 'Patua One', cursive;
-    font-size: 50px;
-    
-}
-
-.header>h2{
-    font-family: 'Anton', sans-serif;
-    font-size: 30px;
-}
-
-.opciones{
+    background-color: rgba(0, 0, 0,0.4);
     width: 100%;
-    height: 50px;
+    height: auto;
+    margin: 0%;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+    .navegacion>.encabezado{
+        color: #d40015;
+        text-align: center;
+        -webkit-text-stroke-width:  0.05vw;
+        -webkit-text-stroke-color: black;
+        font-family: 'Patua One', cursive;
+        font-size: 70px;
+        font-weight: bolder;
+        margin: 0%;
+    }
+
+    .navegacion>.subtitulo{
+        border: 0px solid;
+        color:goldenrod;
+        text-align: center;
+        -webkit-text-stroke-width:  0.05vw;
+        -webkit-text-stroke-color: black;
+        font-family: 'Lato', sans-serif; 
+        margin: 1%;
+        font-family: 'Anton', sans-serif;
+        font-size: 35px;
+        width: 100%;
+    }
+    .navegacion>.opciones{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .opciones>.botones{
+            margin-inline:  auto;
+            font-size: 30px;
+            font-weight: 300;
+            color: #daa520;    
+        }
+    
+        .opciones>.botones>a{
+            color: goldenrod;
+            text-decoration: none;  
+            font-family: 'century gothic',sans-serif;
+            font-weight: bold;
+            padding: 2% 5%;
+            -webkit-transition:all 500ms ease ;
+            -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+            border-radius: 50px ;
+            
+        }
+        .opciones>.botones>a:hover{
+            background: #990000  
+        }
+
+.header>.container{
     display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0;
+    
+    
+}
+    .container>.logo img{
+        width: 150px;
+        height: auto;
+        margin-left:  40px;
+    }
+    .container>.navegacion{
+        margin-left: 0vw;
+    }
+
+
+
+
+
+#carouselExampleCaptions{
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
-.botones{
+
+.carousel-inner{
+    top: 240px;
+    width:1000px;
+    height: auto;
     margin: auto auto;
-    font-size: x-large;
-    font-weight: 2px;
-    color: goldenrod;    
+    border-radius: 20px;
+    position: relative;    
 }
 
-.botones>a{
-    color: goldenrod;
-    text-decoration: none;  
-    font-family: 'century gothic',sans-serif;
-    font-weight: bold;
-    padding: 10px 20px;
-    -webkit-transition:all 500ms ease ;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
-    border-radius: 50px;
+.carousel-indicators{
+    position: absolute;
+    left: 0%;
+    top: 94%;
+}
+
+.carousel-caption {
+	background-color: rgba(41, 23, 1, 0.5);
+	height: 100%;
+	left: 0;
+	top: 0;
+	padding: 30px 45px;
+	text-align: left;
+	width: 360px;
+
+}
+
+    .carousel-caption h1{
+        font-size: 20px;
+        margin-top: 100px;
+        text-align: center;
+        
+    }
+   
+	.carousel-caption h4 {
+		font-size: 20px;
+		margin-bottom: 30px;
+		margin-top: 12px;
+        text-align: center;
+	}
+
+	.carousel-caption img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+        
+	}
+
+	.carousel-caption a {
+		border-radius: 0;
+		font-weight: bold;
+		color: #291701;
+		border: none;
+        position: absolute;
+        left: 30%;
+        
+	}
+
+
+    .carousel-caption p{
+        text-align: left;
+        font-size: 20px;
+        margin-top: 100px;
+    }
+
     
-}
-.botones>a:hover{
-    background: rgb(153,0,0)  
-}
-
-.parrafo{
-    color:black;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-.Advertencia{
-    color:black;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 55px;
-    font-weight: bolder;
-    
-}
-
-.texto{
-    display:block;
-    border: 15px groove;
-    border-color: rgb(204,0,0);
-    background-color:rgba(204,0,0,0.5) ;
-    height: 500px;
-    width: 50%;
-    margin: auto;
-    margin-top: 250px;    
-}
-
-.header>.subtitulo{
-    border: 0px solid;
-    color:goldenrod;
-    text-align: center;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    font-family: 'Lato', sans-serif;  
-}
-
-
-
 
 #menu{
     width: 100%;
@@ -118,30 +190,30 @@ HTML, body{
 }
 
 
-
 .pizza{
-    margin: 10px 50px;
+    margin: 1vw 4vw;
     color: goldenrod;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 1.5vw;
 }
 
 #menu>h2{
-    margin-top:  250px; 
-    margin-left: 63%;
-    font-size: 60px;
-    font-weight: 20px;
-    color: rgb(150,0,0);
+    margin-top:  12%; 
+    margin-left: 61%;
+    font-size: 3.125vw;
+    font-weight: 6.667vw;
+    color: #960000;
     font-style: italic;
     font-family: "Alfa Slab One",cursive;
 }
 
 .bloques{
-    margin-top: 20px;
+    margin-top: 2.667vw;
     display: flex;
     justify-content: flex-end;
     width: 80%;
 }
+
 
 #contacto{
     width: 100%;
@@ -152,17 +224,18 @@ HTML, body{
 }
 
 #contacto>h1{
-    font-size: 75px;
+    font-size: 4vw;
     color: goldenrod;
     text-align:center;
-    margin-top: 200px;
+    margin-top: 12vw;
     
 }
 
 .Ubicacion>h2{
     color: antiquewhite;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 2vw;
+    font-size: 2vw;
 }
 
 .imagen{
@@ -170,6 +243,8 @@ HTML, body{
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
+    align-items: center;
+    width: min-content;
 }
 
 .descripcion{
@@ -179,15 +254,104 @@ HTML, body{
 .descripcion>h1{
     color: goldenrod;
     font-family: 'Cookie', cursive;
-    font-size: 40px;
+    font-size: 3.125vw;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 7vw;
 }
 
 .descripcion>h2{
     color: goldenrod;
     font-family: 'Cookie', cursive;
-    font-size: 40px;
+    font-size: 3.125vw;
     text-align: center;
     margin-top: 0;
+}
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+
+    .navegacion{
+        margin: 0;
+    }
+
+    .navegacion>.encabezado{
+        font-size: 50px;
+        font-weight: bolder;
+    }
+
+    .navegacion>.subtitulo{
+        font-size: 25px;
+        width: 100%;
+    }
+    
+
+        .opciones>.botones{
+            margin-inline:  auto;
+            font-size: 20px;
+            font-weight: 300;
+            color: #daa520;    
+        }
+
+
+    #bienvenidos{
+        position: relative;
+    }
+
+    
+    .logo{
+        opacity: 0.5;
+        width: 100px;
+        height: auto;
+    }
+
+    #carouselExampleCaptions{
+        margin: 0;
+    }
+	.carousel-inner{
+        width:80vw;
+        height: auto;
+        margin: 0 ;
+        border-radius: 20px;
+        position: absolute;
+        left: 10%;
+        right: auto;
+    }
+    
+    .carousel-caption{
+        padding: 2px 5px;
+        width: 22vw;
+        margin: 0 0;
+    }
+
+    .carousel-caption h1{
+        font-size: 15px;
+        
+    }
+   
+	.carousel-caption h4 {
+		font-size: 2vw;
+        margin-top: 5px;
+	}
+
+    .carousel-caption img {
+        width: 15vw;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .carousel-caption a {
+        width: auto;
+        font-size: 2vw;
+        
+    }
+
+    .carousel-caption p{
+        font-size: 2vw;
+        margin-top: 60px;
+
+    }
+
+    
+	
 }
