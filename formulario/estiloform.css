@@ -1,4 +1,6 @@
 * {
+	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
 }
 
@@ -36,94 +38,94 @@ main {
 .formulario {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 20px;
+	gap: 25px;
 }
 
-.formulario__label {
+/* Nombre del campo */
+.formulariol_label {
 	display: block;
-	font-weight: 700;
-	padding: 10px;
     color: darkgoldenrod;
 	cursor: pointer;
 }
 
-.formulario__grupo-input {
+.formulario_grupo-input {
 	position: relative;
 }
 
-.formulario__input {
+.formulario_input {
 	width: 100%;
 	background: rgb(255, 255, 255);
 	border: solid transparent;
-	height: 45px;
-	padding: 0 40px 0 10px;
+	height: 20px;
+	padding:  20px 10px;
 	transition: .3ms ease all;
-    line-height: 45px;
 }
 
-.formulario__input:focus {
-	background-color: rgba(0, 117, 255,0.3  );
+.formulario_input:focus {
+	background-color: rgba(0, 117, 255,0.1  );
     outline: 0;
 }
 
-.formulario__input-error {
-	font-size: 12px;
+/* que hace cuando el input es incorrecto? */
+.formulario_input-error {
+	font-size: 15px;
 	margin-bottom: 0;
 	display: none;
 }
 
-.formulario__input-error-activo {
+/* Mostrar error*/
+.formulario_input-error-activo {
 	display: block;
 }
 
-.formulario__validacion-estado {
-	position: absolute;
-	right: 10px;
-	bottom: 15px;
-	z-index: 100;
-	font-size: 16px;
-	opacity: 0;
-}
 
-.formulario__checkbox {
+
+.formulario_checkbox {
 	margin-right: 10px;
 }
 
-.formulario__grupo-terminos, 
-.formulario__mensaje,
-.formulario__grupo-btn-enviar {
+/* el boton, mensaje y checkbox */
+.formulario_grupo-terminos, 
+.formulario_mensaje,
+.formulario_grupo-btn-enviar {
 	grid-column: span 2;
 }
 
-.formulario__mensaje {
+/* Mensaje de error */
+.formulario_mensaje {
 	height: 45px;
 	line-height: 45px;
-	background: #F66060;
+	background: rgb(246, 50, 50);
 	padding: 0 15px;
 	border-radius: 3px;
 	display: none;
 }
-
-.formulario__mensaje-activo {
+/* mostrar el mensaje cuando suceda el error*/
+.formulario_mensaje-activo {
 	display: block;
 }
 
-.formulario__mensaje p {
+/* texto de error*/
+.formulario_mensaje p {
 	margin: 0;
+	font-weight: 500;
 }
 
-.formulario__grupo-btn-enviar {
+/* alineacion del boton de enviar y mensaje de exito*/
+.formulario_grupo-btn-enviar {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 5px;
 }
 
-.formulario__btn {
+/* boton de submit*/
+.formulario_btn {
 	height: 45px;
 	line-height: 45px;
 	width: 30%;
-	background: #000;
-	color: #fff;
+	background: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	font-weight: bold;
 	border: none;
 	border-radius: 3px;
@@ -131,53 +133,54 @@ main {
 	transition: .1s ease all;
 }
 
-.formulario__btn:hover {
-	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
-}
+/* mensaje exitoso*/
 
-.formulario__mensaje-exito {
-	font-size: 14px;
-	color: #119200;
+.formulario_mensaje-exito {
+
+	font-size: 18px;
+	font-weight: 400;
+	color: rgb(17, 190, 0);
 	display: none;
 }
 
-.formulario__mensaje-exito-activo {
+.formulario_mensaje-exito-activo {
 	display: block;
 }
 
-/* ----- -----  Estilos para Validacion ----- ----- */
-.formulario__grupo-correcto .formulario__validacion-estado {
-	color: rgb(30, 209, 45);
+ /* Estilos para Validacion */
+
+
+.formulario_grupo-correcto .formulario_input {
+	border: 3px solid rgb(30, 209, 45);
 	opacity: 1;
 }
 
-.formulario__grupo-incorrecto .formulario__label {
-	color: #bb2929;
-}
-
-.formulario__grupo-incorrecto .formulario__validacion-estado {
+ /* lo que realiza con el nombre del campo si el input es erroneo */
+.formulario_grupo-incorrecto .formulario_label {
 	color: rgb(187, 41, 41);
-	opacity: 1;
-}
-
-.formulario__grupo-incorrecto .formulario__input {
-	border: 3px solid #bb2929;
 }
 
 
-/* ----- -----  Mediaqueries ----- ----- */
+ .formulario_grupo-incorrecto .formulario_input {
+	border: 3px solid rgb(187, 41, 41);
+}
+
+
+/*  Mediaqueries */
 @media screen and (max-width: 800px) {
 	.formulario {
 		grid-template-columns: 1fr;
 	}
 
-	.formulario__grupo-terminos, 
-	.formulario__mensaje,
-	.formulario__grupo-btn-enviar {
+
+	/* el boton, mensaje y checkbox */
+	.formulario_grupo-terminos, 
+	.formulario_mensaje,
+	.formulario_grupo-btn-enviar {
 		grid-column: 1;
 	}
 
-	.formulario__btn {
+	.formulario_btn {
 		width: 100%;
 	}
     .header{
