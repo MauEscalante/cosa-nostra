@@ -8,7 +8,7 @@ HTML, body{
 
 .logo{
     opacity: 0.5;
-    width: 200px;
+    width: 20% ;
     height: auto;
 }
 
@@ -32,6 +32,10 @@ HTML, body{
     top: 0;
     position: fixed;
     z-index: 1;
+}
+
+.navegacion{
+    width: 80%;
 }
 
     .navegacion>.encabezado{
@@ -191,26 +195,26 @@ HTML, body{
 
 
 .pizza{
-    margin: 1vw 4vw;
+    margin: 10px 40px;
     color: goldenrod;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 30px;
 }
 
 #menu>h2{
-    margin-top:  12%; 
-    margin-left: 61%;
-    font-size: 3.125vw;
-    font-weight: 6.667vw;
+    margin-top:  12vw; 
+    margin-left: 64vw;
+    font-size: 60px;
+    font-weight: 60px;
     color: #960000;
     font-style: italic;
     font-family: "Alfa Slab One",cursive;
 }
 
 .bloques{
-    margin-top: 2.667vw;
+    margin-top: 26px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: right;
     width: 80%;
 }
 
@@ -224,18 +228,18 @@ HTML, body{
 }
 
 #contacto>h1{
-    font-size: 4vw;
+    font-size: 75px;
     color: goldenrod;
     text-align:center;
-    margin-top: 12vw;
+    margin-top: 240px;
     
 }
 
 .Ubicacion>h2{
     color: antiquewhite;
     text-align: center;
-    margin-top: 2vw;
-    font-size: 2vw;
+    margin-top: 40px;
+    font-size: 40px;
 }
 
 .imagen{
@@ -249,26 +253,176 @@ HTML, body{
 
 .descripcion{
     background-color: rgba(0, 0, 0,0.5);
+    margin-top: 140px;
 }
 
 .descripcion>h1{
     color: goldenrod;
     font-family: 'Cookie', cursive;
-    font-size: 3.125vw;
+    font-size: 50px;
     text-align: center;
-    margin-top: 7vw;
+    margin-top: 0;
 }
 
 .descripcion>h2{
     color: goldenrod;
     font-family: 'Cookie', cursive;
-    font-size: 3.125vw;
+    font-size: 50px;
     text-align: center;
     margin-top: 0;
 }
 
 
 /* ----- -----  Mediaqueries ----- ----- */
+
+
+@media screen and (max-width: 1000px) {
+
+    .logo{
+        margin-top: 50px;
+        width: 100px;
+    }
+
+    .navegacion{
+        margin: 0;
+    }
+
+    .navegacion>.encabezado{
+        font-size: 60px;
+        font-weight: bolder;
+    }
+
+    .navegacion>.subtitulo{
+        font-size: 30px;
+        width: 100%;
+    }
+    
+
+        .opciones>.botones{
+            margin-inline:  auto;
+            font-size: 27px;
+            font-weight: 300;
+            color: #daa520;    
+        }
+
+
+  
+
+    
+
+    #carouselExampleCaptions{
+        margin: 0;
+    }
+	.carousel-inner{
+        width:72vw;
+        height: auto;
+        margin: 0 ;
+        border-radius: 20px;
+        left: 12%;
+        right: auto;
+    }
+    
+    .carousel-caption{
+        padding: 2px 5px;
+        width: 23vw;
+        margin: 0 0;
+    }
+
+    .carousel-caption h1{
+        font-size: 30px;
+        
+    }
+   
+	.carousel-caption h4 {
+		font-size: 2vw;
+        margin-top: 5px;
+	}
+
+    .carousel-caption img {
+        width: 120px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .carousel-caption a {
+        width: auto;
+        font-size: 2vw;
+        
+    }
+
+    .carousel-caption p{
+        font-size: 2vw;
+        margin-top: 30px;
+
+    }
+    
+    .pizza{
+        margin: 10px 40px;
+        color: goldenrod;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 20px;
+    }
+    
+    #menu>h2{
+        margin-top:  25vw; 
+        margin-left: 60vw;
+        font-size: 50px;
+        color: #960000;
+        font-style: italic;
+        font-family: "Alfa Slab One",cursive;
+    }
+    
+    .bloques{
+        margin-top: 26px;
+        display: flex;
+        justify-content: right;
+        width: 90%;
+    }
+    
+    #contacto>h1{
+        font-size: 45px;
+        color: goldenrod;
+        text-align:center;
+        margin-top: 200px;
+        
+    }
+    
+    .Ubicacion>h2{
+        color: antiquewhite;
+        text-align: center;
+        margin-top: 25px;
+        font-size: 25px;
+    }
+    
+    .imagen{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 25px;
+        align-items: center;
+        width: 300px;
+    }
+    
+    .descripcion{
+        background-color: rgba(0, 0, 0,0.5);
+        margin-top: 12vw;
+    }
+    
+    .descripcion>h1{
+        color: goldenrod;
+        font-family: 'Cookie', cursive;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+
+}
+
+
+
+
 @media screen and (max-width: 800px) {
 
     .navegacion{
@@ -281,7 +435,7 @@ HTML, body{
     }
 
     .navegacion>.subtitulo{
-        font-size: 25px;
+        font-size: 20px;
         width: 100%;
     }
     
@@ -301,7 +455,7 @@ HTML, body{
     
     .logo{
         opacity: 0.5;
-        width: 100px;
+        width: 80px;
         height: auto;
     }
 
@@ -313,20 +467,19 @@ HTML, body{
         height: auto;
         margin: 0 ;
         border-radius: 20px;
-        position: absolute;
         left: 10%;
         right: auto;
     }
     
     .carousel-caption{
-        padding: 2px 5px;
+        padding: 2px 1px;
         width: 22vw;
         margin: 0 0;
     }
 
     .carousel-caption h1{
         font-size: 15px;
-        
+        margin-top: 70px;
     }
    
 	.carousel-caption h4 {
@@ -342,16 +495,226 @@ HTML, body{
 
     .carousel-caption a {
         width: auto;
-        font-size: 2vw;
+        font-size: 1.8vw;
         
     }
 
     .carousel-caption p{
-        font-size: 2vw;
-        margin-top: 60px;
+        font-size: 12px;
+        margin-top: 30px;
 
+    }
+    
+    .pizza{
+        margin: 10px 40px;
+        color: goldenrod;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 15px;
+    }
+    
+    #menu>h2{
+        margin-top:  25vw; 
+        margin-left: 50vw;
+        font-size: 40px;
+        color: #960000;
+        font-style: italic;
+        font-family: "Alfa Slab One",cursive;
+    }
+    
+    .bloques{
+        margin-top: 26px;
+        display: flex;
+        justify-content: right;
+        width: 80%;
+    }
+    
+    #contacto>h1{
+        font-size: 45px;
+        color: goldenrod;
+        text-align:center;
+        margin-top: 150px;
+        
+    }
+    
+    .Ubicacion>h2{
+        color: antiquewhite;
+        text-align: center;
+        margin-top: 25px;
+        font-size: 25px;
+    }
+    
+    .imagen{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 25px;
+        align-items: center;
+        width: 55vw;
+    }
+    
+    .descripcion{
+        background-color: rgba(0, 0, 0,0.5);
+        margin-top: 12vw;
+    }
+    
+    .descripcion>h1{
+        color: goldenrod;
+        font-family: 'Cookie', cursive;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+   
+	
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .navegacion{
+        margin: 0;
+    }
+
+    .navegacion>.encabezado{
+        font-size: 35px;
+        font-weight: bolder;
+    }
+
+    .navegacion>.subtitulo{
+        font-size: 15px;
+        width: 100%;
+    }
+    
+
+        .opciones>.botones{
+            margin-inline:  auto;
+            font-size: 15px;
+            font-weight: 300;
+            color: #daa520;    
+        }
+
+
+    #bienvenidos{
+        position: relative;
     }
 
     
+    .logo{
+        opacity: 0.5;
+        width: 60px;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    #carouselExampleCaptions{
+        margin: 0;
+    }
+	.carousel-inner{
+        width:90vw;
+        height: auto;
+        margin: 0 ;
+        border-radius: 20px;
+        left: 6%;
+        right: auto;
+    }
+    
+    .carousel-caption{
+        padding: 1px 1px;
+        width: 22vw;
+        margin: 0 0;
+    }
+
+    .carousel-caption h1{
+        font-size: 12px;
+        margin-top: 7vw;
+    }
+   
+	.carousel-caption h4 {
+		font-size: 2.3vw;
+        margin-top: 5px;
+	}
+
+    .carousel-caption img {
+        width: 15vw;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .carousel-caption a {
+        width: auto;
+        font-size: 1.8vw;
+        
+    }
+
+    .carousel-caption p{
+        font-size: 10px;
+        margin-top: 30px;
+
+    }
+    
+    .pizza{
+        margin: 10px 40px;
+        color: goldenrod;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 15px;
+    }
+    
+    #menu>h2{
+        margin-top:  25vw; 
+        margin-left: 55vw;
+        font-size: 40px;
+        color: #960000;
+        font-style: italic;
+        font-family: "Alfa Slab One",cursive;
+    }
+    
+    .bloques{
+        margin-top: 26px;
+        display: flex;
+        justify-content: right;
+        width: 100%;
+    }
+    
+    #contacto>h1{
+        font-size: 45px;
+        color: goldenrod;
+        text-align:center;
+        margin-top: 150px;
+        
+    }
+    
+    .Ubicacion>h2{
+        color: antiquewhite;
+        text-align: center;
+        margin-top: 25px;
+        font-size: 25px;
+    }
+    
+    .imagen{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 25px;
+        align-items: center;
+        width: 55vw;
+    }
+    
+    .descripcion{
+        background-color: rgba(0, 0, 0,0.5);
+        margin-top: 12vw;
+    }
+    
+    .descripcion>h1{
+        color: goldenrod;
+        font-family: 'Cookie', cursive;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+   
 	
 }
