@@ -4,15 +4,16 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-    background: url("fondo.webp") no-repeat;
+    background: url("fondo.webp") no-repeat 10% 10%;
     background-size: cover;
 }
 
 .header{
     background-color: #000;
     width: 37%;
-    margin-left: 31%;
-    margin-top: 15%;
+    margin-left:  auto;
+	margin-right: auto;
+	margin-top: 13%;
 }
 
 .header h1{
@@ -26,9 +27,10 @@ body {
 main {
    
 	max-width: 800px;
-	width: 90%;
+	width: 37%;
 	margin: auto;
 	padding: 40px;
+	background-color: rgb(235, 235, 235);
 }
 
 .formulario {
