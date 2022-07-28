@@ -108,12 +108,9 @@ formulario.addEventListener('submit', (e) => {
 	//borra todos los campos al ser enviados
 	if(campos.nombre && campos.apellido && campos.password && campos.correo && campos.telefono && terminos.checked ){
 		formulario.reset();
-		//bora mensaje de exito desp de un lapto de 4 segundos
+		//muestra mensaje de exito 
 		document.getElementById('formulario_mensaje-exito').classList.add('formulario_mensaje-exito-activo');
-		setTimeout(() => {
-			document.getElementById('formulario_mensaje-exito').classList.remove('formulario_mensaje-exito-activo');
-		}, 4000);
-		setTimeout("redireccionar()", 4000);
+		setTimeout("redireccionar()", 3000);
 	
 		//bora mensaje de error desp de un lapso de 4 segundos
 	} else {
