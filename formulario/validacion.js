@@ -127,7 +127,7 @@ formulario.addEventListener('submit', (e) => {
 
 
 const redireccionar=()=>{
-	window.location.href = "https://cosa-nostra.netlify.app/#bienvenidos";
+	window.location.href = "https://cosa-nostra.netlify.app/";
   }
    
   
